@@ -34,4 +34,5 @@ public class GPA {
 
         scanner.close();
     }
+
 }
