@@ -22,6 +22,6 @@ public class Speed {
     System.out.println(metersInSecond);
     System.out.println(kmPerHour);
     System.out.println(mph);
-
+        
     }
 }
