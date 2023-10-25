@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Array1 {
+public class ArrayLoop {
     public static void main(String[] args) {
         // try to make an array
         String[] newArr = new String[5];
@@ -10,9 +10,10 @@ public class Array1 {
         newArr[3] = "bill";
         newArr[4] = "joe";
 
-        for (int i = 0; i < newArr.length; i++) {
-            System.out.println(newArr[i]);
-
+        int indexCount = 0;
+        for (String element : newArr) {
+            System.out.println(element + " " + indexCount);
+            indexCount++;
         }
     }
 }
