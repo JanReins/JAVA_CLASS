@@ -1,14 +1,14 @@
-class Box7 {
+class Box_7 {
     double width;
     double height;
     double depth;
 
     //Constructor method
-    Box7 () {
-        System.out.println("Constructor Box");
-        width = 10;
-        height = 10;
-        depth = 10;
+    Box_7 (double h, double w, double d) {
+        width = w;
+        height = h;
+        depth = d;
+        
     }
 
     //display volume
@@ -19,8 +19,8 @@ class Box7 {
 
     class DemoBox7 {
         public static void main(String[] args) {
-        Box7 mybox1 = new Box7();
-        Box7 mybox2 = new Box7();
+        Box_7 mybox1 = new Box_7(10, 20, 5);
+        Box_7 mybox2 = new Box_7(5, 15, 30);
         double vol;
 
     //get volume of mybox1
