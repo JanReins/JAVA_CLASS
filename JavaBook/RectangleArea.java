@@ -23,6 +23,4 @@ class Rectangle1 {
         System.out.println(area);
     }
 
-    
 }
-
