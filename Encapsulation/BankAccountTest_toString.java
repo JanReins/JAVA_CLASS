@@ -78,8 +78,6 @@ public class BankAccountTest_toString {
     System.out.println("Balance: " + account2.getBalance());
     System.out.println(account2.toString());
         
-    
-    
 
 }
 
