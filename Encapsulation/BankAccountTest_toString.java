@@ -42,16 +42,16 @@ class BankAccount_toString {
 
     }
     //override
-    public boolean equals(Object obj){
-        if (this == obj) {
-            return true;
-        } else if (obj == null || getClass()!= obj.getClass()) {    
-            return false;
-        }
-
-        BankAccount that = (BankAccount) obj;
-        return accountNumber.equals(that.accountNumber) && balance == that.balance;
+    public boolean equals(Object obj) {
+    if (this == obj) {
+        return true;
+    } else if (obj == null || getClass() != obj.getClass()) {
+        return false;
     }
+
+    BankAccount that = (BankAccount) obj;
+    return getAccountNumber().equals(that.getAccountNumber()) && getBalance() == that.getBalance();
+}
 
 }  
     
@@ -77,8 +77,10 @@ public class BankAccountTest_toString {
     System.out.println("Account Number: " + account2.getAccountNumber());
     System.out.println("Balance: " + account2.getBalance());
     System.out.println(account2.toString());
+
+    boolean isequa1and2 = account1.equals(account2);
+    System.out.println("Account 1 and Account 2 are equal: " + isequa1and2);
         
 
-}
-
+    }
 }
