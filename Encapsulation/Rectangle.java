@@ -28,25 +28,45 @@ public class Rectangle{
         return  "(" + upperleft + "," + lowerright + ")";
     } 
 
-    public int length() {
 
-    }
-
-    /*public boolean equals(Object obj) {
+    public boolean equals(Object obj) {
         if (this == obj) return true;
-        if (obj == null) return false;
-        Rectangle rectangle = (rectangle) obj;
-        return upperleft == rectangle.upperleft*/
+        if (obj == null || getClass()!= obj.getClass()) return false;
 
-
+        Rectangle rectangle = (Rectangle) obj;
+        return upperleft.equals(rectangle.upperleft) && lowerright.equals(rectangle.lowerright);
+    }
     public int length() {
-
+        int length = lowerright.getX() - upperleft.getX();
+        return length;
     }
 
-
-    
-
+    public int width() {
+       int width = lowerright.getY() - upperleft.getY();
+       return width;
     }
 
+    public int area() {
+        int area = length()* width();
+        return area;
+    }
 
+    public int perimeter() {
+        int perimeter = 2*(length() + width());
+        return perimeter;
 
+}
+
+public static void main(String[] args) {
+    Point upperleft = new Point(-1, -2);
+    Point lowerright = new Point(-3, 4)
+
+    Rectangle rectangle = new Rectangle(upperleft, lowerright);
+
+    System.out.println("length: " + rectangle.length())
+    System.out.println("width: " + rectangle.width())
+    System.out.println("area: " + rectangle.area())
+    System.out.println("perimeter: " + rectangle.perimeter())
+}
+
+}
