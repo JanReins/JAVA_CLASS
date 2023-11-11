@@ -1,7 +1,7 @@
 // Car class with encapsulation
 class Car {
-    private String model; // Private variable - can only be accessed within the class
-    private int year;     // Private variable - can only be accessed within the class
+    private String model;
+    private int year; 
     
     // Constructor to initialize Car object with model and year
     public Car(String model, int year) {
