@@ -55,6 +55,29 @@ public class Rectangle{
         int perimeter = 2*(length() + width());
         return perimeter;
 
+    public double diagonal() {
+        double diagonal = (int) Math.sqrt(length()*length() + width()*width());
+        return diagonal;
+    }
+
+    public boolean isASquare() {
+        if(length() == width())
+            return true;
+        else
+            return false;
+    }
+
+    public toString() {
+        return "Rectangle{" +
+                "upperleft=" + upperleft +
+                ", lowerright=" + lowerright +
+                '}';
+    }
+
+    public boolean equals(Object obj) {
+        if (this == obj) return true;
+        if (obj == null || getClass()!= obj.getClass()) return false;
+
 }
 
 public static void main(String[] args) {
